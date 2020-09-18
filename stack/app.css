@@ -1,0 +1,71 @@
+body {
+  background: #a7a7a7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.editor {
+  position: relative;
+  margin: 1rem;
+}
+
+.editor__toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  padding: 5px;
+  background: rgba(25, 100, 197, 0.5);
+  display: flex;
+}
+
+.editor__toolbar-btn {
+  cursor: pointer;
+}
+
+.editor__textarea {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #333;
+  width: 100%;
+  min-height: 500px;
+  max-height: 800px;
+  overflow-y: auto;
+  padding: 50px 10px;
+}
+
+.editor__status-bar {
+  background: #333;
+  padding: 10px;
+  color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor__status-bar-text {
+  letter-spacing: 1.5px;
+  font-family: monospace;
+}
+
+.editor__status-bar-text::after {
+  content: "\00a0";
+  background: green;
+  font-size: 18px;
+  animation: 0.5s blink infinite;
+}
+
+.editor__status-bar-text--strong {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

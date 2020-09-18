@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Application</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="editor">
+      <div class="editor__toolbar">
+        <button class="editor__toolbar-btn" id="bold-btn"><b>B</b></button>
+        <button class="editor__toolbar-btn" id="italics-btn"><i>I</i></button>
+        <button class="editor__toolbar-btn" id="underline-btn"><u>U</u></button>
+        <button class="editor__toolbar-btn" id="undo-btn">⟲ Undo</button>
+        <button class="editor__toolbar-btn" id="redo-btn">⟳ Redo</button>
+      </div>
+      <div class="editor__textarea" contenteditable id="text-container"></div>
+      <div class="editor__status-bar">
+        <span class="editor__status-bar-text"
+          >Undo Stack Size:
+          <span id="undo-size" class="editor__status-bar-text--strong"
+            >0</span
+          ></span
+        >
+        <span class="editor__status-bar-text"
+          >Redo Stack Size:
+          <span id="redo-size" class="editor__status-bar-text--strong"
+            >0</span
+          ></span
+        >
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
