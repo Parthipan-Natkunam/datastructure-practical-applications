@@ -1,4 +1,4 @@
-## ##Data Structures Practical Applications
+## Data Structures Practical Applications
 
 ---
 
