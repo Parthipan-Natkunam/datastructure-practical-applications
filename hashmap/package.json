@@ -1,0 +1,19 @@
+{
+  "name": "cpr-img",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cpr-img.js",
+  "scripts": {
+    "start": "node cpr-img.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@canvas/image": "^1.0.0",
+    "blockhash-core": "^0.1.0",
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "yargs": "^16.0.3"
+  }
+}
